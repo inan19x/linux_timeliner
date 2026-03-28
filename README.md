@@ -24,8 +24,8 @@ The script flags important events like failed logins, sudo usage, web alerts, ID
 
 | Timestamp           | Event                                                                                                                | Source       | Flags          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------ | -------------- |
-| 2025/12/31 20:57:19 | (dev1) CMD (/tmp/x88aGH9z.sh)                                                                                        | CRON_LOG     |                |
-| 2025/12/31 20:57:29 | kernel: [ 1413.547803] device enp0s3 entered promiscuous mode                                                        | MESSAGES_LOG |                |
-| 2025/12/31 20:12:42 | 162.216.149.105 "POST /webapp/admin/file_upload.php HTTP/1.1"                                                        | HTTP_LOG     | WEB_ALERT      |
-| 2025/12/31 20:08:24 | [\*\*] [1:1000012:1] Possible staged C2 reverse shell detected ...                                                   | SURICATA_LOG | SURICATA_ALERT |
+| 2025/12/31 20:08:19 | (dev1) CMD (/tmp/x88aGH9z.sh)                                                                                        | CRON_LOG     |                |
+| 2025/12/31 20:09:29 | kernel: [ 1413.547803] device enp0s3 entered promiscuous mode                                                        | MESSAGES_LOG |                |
+| 2025/12/31 20:10:42 | 162.216.149.105 "POST /webapp/admin/file_upload.php HTTP/1.1"                                                        | HTTP_LOG     | WEB_ALERT      |
+| 2025/12/31 20:12:24 | [\*\*] [1:1000012:1] Possible staged C2 reverse shell detected ...                                                   | SURICATA_LOG | SURICATA_ALERT |
 | 2025/12/31 20:56:35 | 730 172.16.1.10 TCP_MISS/200 2829528 GET [h++ps://hacking.evil.lab/](h++ps://hacking.evil.lab/)...                   | SQUID_LOG    |                |
