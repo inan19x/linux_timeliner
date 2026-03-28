@@ -2,7 +2,8 @@
 
 linux_timeliner.sh is a Bash script that collects and parses multiple Linux log sources to generate a unified, chronological CSV timeline. It supports logs from:
 - /var/log/secure, /var/log/cron, /var/log/messages
-- HTTP (/var/log/httpd/access_log) and Squid (/var/log/squid/access.log)
+- HTTP (/var/log/httpd/access_log)
+- Squid (/var/log/squid/access.log)
 - Wazuh (/var/ossec/logs/ossec.log)
 - Suricata (/usr/local/var/log/suricata/fast.log)
 - last/lastb login history
