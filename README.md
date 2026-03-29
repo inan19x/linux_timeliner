@@ -9,6 +9,9 @@ linux_timeliner.sh is a Bash script that collects and parses multiple Linux log 
 - last/lastb login history
 - Audit logs (/var/log/audit/audit.log)
 
+NEW:
+```linux_timeliner2.sh``` is faster and the result are more human friendly because instead of using ```awk```, it uses Linux auditd's ```ausearch```
+
 The script flags important events like failed logins, sudo usage, web alerts, IDS alerts, and audit events, producing a CSV file that is ready for forensic analysis.
 
 ## Usage:
