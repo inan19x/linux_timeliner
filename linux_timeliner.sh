@@ -50,7 +50,7 @@ parse_syslog_file() {
     function pad(n){ return (n<10?"0":"") n }
 
     {
-        ts=year "/" pad(mon2num($1)) "/" pad($2) " " $3
+        ts=year "/" pad(mon2num($1)) "/" pad($2+0) " " $3
 
         if (ts >= start && ts <= end) {
             $1=$2=$3=""
