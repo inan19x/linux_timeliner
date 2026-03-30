@@ -10,7 +10,7 @@ linux_timeliner.sh is a Bash script that collects and parses multiple Linux log 
 - Audit logs (/var/log/audit/audit.log)
 
 NEW:
-```linux_timeliner2.sh``` is faster and the result are more human friendly because instead of using ```awk```, it uses Linux auditd's ```ausearch```
+```linux_timeliner2.sh``` is faster and the result are more human-friendly-output. Instead of using ```awk``` directly to ```audit.log```, it uses built-in auditd tool ```ausearch -i``` to read and interpret ```audit.log```
 
 The script flags important events like failed logins, sudo usage, web alerts, IDS alerts, and audit events, producing a CSV file that is ready for forensic analysis.
 
