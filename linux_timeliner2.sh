@@ -6,7 +6,7 @@ export LC_TIME=C
 SECURE_LOG="/var/log/secure"
 CRON_LOG="/var/log/cron"
 MESSAGES_LOG="/var/log/messages"
-AUDIT_LOG="/var/log/audit/audit.log"
+AUDIT_LOG="/var/log/audit/audit.log" #will use ausearch
 SURICATA_LOG="/usr/local//var/log/suricata/fast.log"
 HTTP_LOG="/var/log/httpd/access_log"
 SQUID_LOG="/var/log/squid/access.log"
@@ -50,7 +50,7 @@ parse_syslog_file() {
     function pad(n){ return (n<10?"0":"") n }
 
     {
-        ts=year "/" pad(mon2num($1)) "/" pad($2) " " $3
+        ts=year "/" pad(mon2num($1)) "/" pad($2+0) " " $3
 
         if (ts >= start && ts <= end) {
             $1=$2=$3=""
